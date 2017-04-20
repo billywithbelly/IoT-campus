@@ -12,13 +12,13 @@ var mqtt = require('mqtt');
 var opt = {
 	port:1883,
 	clientID: '4184eb5d0e8942bb83408c61bdf17af9'
-
 };
 
 var client = mqtt.connect('mqtt://104.199.215.165', opt);
 client.on('connect', function (){
 	console.log('you are connected');
 	client.subscribe('GIOT-GW/UL/1C497B43217A');
+	console.log ('-----------------------');
 });
 
 client.on('message', function (topic, msg){
@@ -30,21 +30,38 @@ client.on('message', function (topic, msg){
 		console.log('recieved:  macAddr:'+obj.macAddr+' data:'+obj.data);
 		var parse = obj.data.toString ();
 		var lngth = parse.length;
-		for (var i=1; i<4; i++) {
+		for (var i=1; i<6; i++) {
 			switch (i) {
 				case 1: {
 					var tmpt = parse.substring (lngth-i*2, lngth-(i-1)*2);
-					console.log ('temperature : ' + 'hex : ' + parse.substring (lngth-i*2, lngth-(i-1)*2) + ' decimal : ' + hexToDec(tmpt));
+					//console.log ('temperature : ' + 'hex : ' + parse.substring (lngth-i*2, lngth-(i-1)*2) 
+					//	+ ' decimal : ' + hexToDec(tmpt));
+					console.log ('temperature : ' + hexToDec(tmpt));
 					break;
 				}
 				case 2: {
 					var tmpt = parse.substring (lngth-i*2, lngth-(i-1)*2);
-					console.log ('magnetic disturbance : ' + 'hex : ' + parse.substring (lngth-i*2, lngth-(i-1)*2) + ' decimal : ' + hexToDec(tmpt));
+					//console.log ('magnetic disturbance : ' + 'hex : ' + parse.substring (lngth-i*2, lngth-(i-1)*2) 
+					//	+ ' decimal : ' + hexToDec(tmpt));
+					console.log ('magnetic disturbance : ' + hexToDec(tmpt));
 					break;
 				}
 				case 3: {
 					var tmpt = parse.substring (lngth-(i+1)*2, lngth-(i-1)*2);
-					console.log ('temperature : ' + 'hex : ' + parse.substring (lngth-(i+1)*2, lngth-(i-1)*2) + ' decimal : ' + (hexToDec(tmpt) / 1000) );
+					//console.log ('voltage : ' + 'hex : ' + parse.substring (lngth-(i+1)*2, lngth-(i-1)*2) 
+					//	+ ' decimal : ' + (hexToDec(tmpt) / 1000) );
+					console.log ('voltage : ' + (hexToDec(tmpt) / 1000) );
+					break;
+				}
+				case 4: {
+					// do nothing 
+					break;
+				}
+				case 5: {
+					var tmpt = parse.substring (lngth-i*2, lngth-(i-1)*2);
+					//console.log ('car flag : ' + 'hex : ' + parse.substring (lngth-(i+1)*2, lngth-(i-1)*2) 
+					//	+ ' decimal : ' + (hexToDec(tmpt) / 1000) );
+					console.log ('car flag : ' + hexToDec(tmpt));
 					break;
 				}
 				default : {
@@ -53,6 +70,8 @@ client.on('message', function (topic, msg){
 				}
 			}
 		}
+
+		console.log ('-----------------------');
 	}
 	
 });
