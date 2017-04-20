@@ -7,6 +7,10 @@ function hexToDec(hex) {
     }
     return result;
 }
+function Hex2Bin(hex) {
+	var tmpt = parseInt(hex,16).toString(2);
+	return tmpt.substring (tmpt.length-1, tmpt.length);
+}
 
 var mqtt = require('mqtt');
 var opt = {
@@ -61,7 +65,7 @@ client.on('message', function (topic, msg){
 					var tmpt = parse.substring (lngth-i*2, lngth-(i-1)*2);
 					//console.log ('car flag : ' + 'hex : ' + parse.substring (lngth-(i+1)*2, lngth-(i-1)*2) 
 					//	+ ' decimal : ' + (hexToDec(tmpt) / 1000) );
-					console.log ('car flag : ' + hexToDec(tmpt));
+					console.log ('car flag : ' + Hex2Bin(tmpt));
 					break;
 				}
 				default : {
