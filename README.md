@@ -1,9 +1,13 @@
 ### IoT-campus
 # an project to build a better campus
 ---
-- Account : 
+- Account : 請假裝沒看到
 	- User : willy3364
 	- Password : c0806449
+---
+- Tutorial :
+	- webpack --watch
+	- heroku local web
 ---
 - Updated : 
 	- Icon
