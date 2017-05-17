@@ -1,9 +1,9 @@
 ### IoT-campus
 # an project to build a better campus
 ---
-- Account : 請假裝沒看到
-	- User : willy3364
-	- Password : c0806449
+- Database account : 
+	- User : lora
+	- Password : lora
 ---
 - Tutorial :
 	- webpack --watch
