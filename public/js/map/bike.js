@@ -4,7 +4,8 @@ export default class Bike{
   constructor(map,bike,index){
     this.bike = bike;
     this.icon = {
-      url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-transport-travel/116392-magic-marker-icon-transport-travel-transportation-bicycle.png', // url
+      //url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-transport-travel/116392-magic-marker-icon-transport-travel-transportation-bicycle.png', // url
+      url : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/2000px-Parking_icon.svg.png',
       scaledSize: new google.maps.Size(40, 40), // scaled size
     };
     this.marker = new google.maps.Marker({
