@@ -1,0 +1,53 @@
+{
+  "name": "rurubike",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "6.2.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "compression": "latest",
+    "cors": "latest",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "express-session": "latest",
+    "fs": "latest",
+    "htmlspecialchars": "latest",
+    "js-md5": "latest",
+    "mongodb": "latest",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-google-maps": "^4.11.0",
+    "request": "latest",
+    "socket.io": "latest",
+    "imgur": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/rurubike"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.22.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-closure-compiler": "^2.1.1",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
