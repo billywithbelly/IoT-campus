@@ -22,3 +22,6 @@
 		- react
 		- materialize
 		- mongodb
+---
+- Notes :
+	- React : public/js/react/index.js
