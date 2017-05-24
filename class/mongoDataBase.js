@@ -56,7 +56,8 @@ class Mongo
 
 	getBikes(callback) 
 	{
-		this.MongoDatabase.collection('bike').find({}).toArray(callback);
+		this.MongoDatabase.collection('Parking').find({}).toArray(callback);
+		//console.log(this.MongoDatabase.collection('bike').find({}).toArray(callback));
 	}
 
 	getOneBike(json, callback) 
@@ -66,8 +67,9 @@ class Mongo
 
 	setBike(id,state,battery,kid,callback) 
 	{
-		this.MongoDatabase.collection('bike').insertOne(
+		this.MongoDatabase.collection('Parking').insertOne(
 		{
+			/*
 			id 		: id,
 			state 	: state,
 			battery : battery,
@@ -77,6 +79,8 @@ class Mongo
 			},
 			kid		: kid,
 			time: new Date()
+			*/
+			_id		:id,
 		}
 		,callback);
 	}

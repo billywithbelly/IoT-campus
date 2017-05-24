@@ -6,9 +6,9 @@ export default class Socket{
 		this.socket.on('log', function (log) {
 			console.log(log);
 		});
-		this.socket.on('bikes',(response)=>{
-			var bikes = response.result;
-			this.map.setBikes(bikes);
+		this.socket.on('parking',(response)=>{
+			var parking = response.result;
+			this.map.setBikes(parking);
 		});
 	}
 }
