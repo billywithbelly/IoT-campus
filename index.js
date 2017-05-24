@@ -22,8 +22,8 @@ app.use(session({
 var RurubikeAPI = require('./class/ruruBikeAPI.js');
 var MongoDataBase = require('./class/mongoDataBase.js');
 var SocketIO = require('./class/socket.js');
-var mongoDataBase = new MongoDataBase('mongodb://student:hsnl33564@ds143181.mlab.com:43181/smartcampus');
-//var mongoDataBase = new MongoDataBase('mongodb://lora:lora@ds143081.mlab.com:43081/loraparkinglot');
+//var mongoDataBase = new MongoDataBase('mongodb://student:hsnl33564@ds143181.mlab.com:43181/smartcampus');
+var mongoDataBase = new MongoDataBase('mongodb://admin:admin@ds062339.mlab.com:62339/vaynedb');
 var rurubike = new RurubikeAPI(app,mongoDataBase);
 var socket = new SocketIO(httpServer,mongoDataBase);
 
