@@ -69,7 +69,7 @@ class Mongo
 	{
 		this.MongoDatabase.collection('Parking').insertOne(
 		{
-			/*
+			
 			id 		: id,
 			state 	: state,
 			battery : battery,
@@ -79,8 +79,7 @@ class Mongo
 			},
 			kid		: kid,
 			time: new Date()
-			*/
-			_id		:id,
+
 		}
 		,callback);
 	}
