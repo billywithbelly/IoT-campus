@@ -56,7 +56,7 @@ class Mongo
 
 	getBikes(callback) 
 	{
-		this.MongoDatabase.collection('bike').find({}).toArray(callback);
+		this.MongoDatabase.collection('Parking').find({}).toArray(callback);
 		//console.log(this.MongoDatabase.collection('bike').find({}).toArray(callback));
 	}
 
