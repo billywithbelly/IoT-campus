@@ -23,6 +23,7 @@ var RurubikeAPI = require('./class/ruruBikeAPI.js');
 var MongoDataBase = require('./class/mongoDataBase.js');
 var SocketIO = require('./class/socket.js');
 var mongoDataBase = new MongoDataBase('mongodb://student:hsnl33564@ds143181.mlab.com:43181/smartcampus');
+
 var rurubike = new RurubikeAPI(app,mongoDataBase);
 var socket = new SocketIO(httpServer,mongoDataBase);
 
