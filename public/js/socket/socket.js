@@ -13,16 +13,15 @@ export default class Socket{
 			for(var i=0;i<bikes.length;i++){
 				var obj = new Object;
 				obj.id = bikes[i]._id;
-
-			  obj.state = bikes[i].data.charAt(8);
+				if(bikes[i].data.charAt(8) == 0)obj.state = 0;
+				else obj.state = 1;
 				obj.battery = bikes[i].data.charAt(4);
+				obj.location = bikes[i].location;
 
-				obj.location = {
-				latitude  : 24.795942,
-				longitude : 120.996966
-			  };
-				obj.kid = null;
-				obj.time = bikes[i].time;
+				//obj.kid = null;
+
+				d = new Date();
+				obj.time = new Date(new Date(bikes[i].time) - (d.getTimezoneOffset() * 60000));
 
 				console.log(bikes[i]);
 				console.log(obj);
