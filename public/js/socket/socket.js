@@ -20,8 +20,20 @@ export default class Socket{
 
 				//obj.kid = null;
 
+				var currentdate = new Date(); 
+				var datetime = "Last Sync: " + currentdate.getDate() + "/"
+				                + (currentdate.getMonth()+1)  + "/" 
+				                + currentdate.getFullYear() + " @ "  
+				                + currentdate.getHours() + ":"  
+				                + currentdate.getMinutes() + ":" 
+				                + currentdate.getSeconds();
 				d = new Date();
 				obj.time = new Date(new Date(bikes[i].time) - (d.getTimezoneOffset() * 60000));
+				//obj.time = currentdate;
+				if ((new Date(bikes[i].time).getDate() != currentdate.getDate()) && obj.state == 1)
+					obj.yesterday = "yes";
+				else
+					obj.yesterday = "no";
 
 				console.log(bikes[i]);
 				console.log(obj);
