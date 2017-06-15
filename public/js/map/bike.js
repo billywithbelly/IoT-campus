@@ -10,12 +10,14 @@ export default class Bike{
       scaledSize: new google.maps.Size(10, 10), // scaled size
     };
 
+
     if(bike.id == "0000000000000390" || bike.id == "0000000000000393" || bike.id == "0000000000000394" || bike.id == "0000000000000397"){
         this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png';
       if(bike.state == 1){
         this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
         if(bike.lasttime != null){
           if(bike.diff >= 30)this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+
         }
       }
     }
@@ -28,6 +30,7 @@ export default class Bike{
       customInfo: this.index
     });
     this.attachSecretMessage = this.attachSecretMessage.bind(this);
+
   }
 
   attachSecretMessage() {
