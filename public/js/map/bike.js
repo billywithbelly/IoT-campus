@@ -17,7 +17,9 @@ export default class Bike{
         var n = d.getTime();
         var diff = (n - bike.lasttime)/(1000*60);
         console.log(diff);
-        if(diff >= 30)this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+        if(diff >= 30) {
+          this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+        }
       }
     }
 
@@ -32,7 +34,7 @@ export default class Bike{
     });
     this.attachSecretMessage = this.attachSecretMessage.bind(this);
     if(bike.state == 0){
-      this.marker.setAnimation(google.maps.Animation.BOUNCE);
+      //this.marker.setAnimation(google.maps.Animation.BOUNCE);
       //setTimeout("this.marker.setAnimation(google.maps.Animation.BOUNCE)" , 10000);
       //setTimeout("this.marker.setAnimation(4)" , 10000);
       
