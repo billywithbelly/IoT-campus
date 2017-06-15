@@ -7,14 +7,21 @@ export default class Bike{
     
     this.icon = {
       //url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-transport-travel/116392-magic-marker-icon-transport-travel-transportation-bicycle.png', // url
-      url : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Green_Dot.svg/200px-Green_Dot.svg.png',
-      scaledSize: new google.maps.Size(17, 17) // scaled size
+      url : 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png',
+      scaledSize: new google.maps.Size(10, 10), // scaled size
     };
-    
-    if(bike.state == 1) {
-      this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Red_dot.svg/1024px-Red_dot.svg.png';
+    if(bike.state == 1){
+      this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
+      var d = new Date();
+      if(bike.lasttime != null){
+        var n = d.getTime();
+        var diff = (n - bike.lasttime)/(1000*60);
+        console.log(diff);
+        if(diff >= 30)this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+      }
     }
-    
+
+
     this.marker = new google.maps.Marker({
       map: map.googleMap,
       position: {lat: parseFloat(bike.location.latitude), lng: parseFloat(bike.location.longitude)},
