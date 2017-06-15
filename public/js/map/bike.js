@@ -4,21 +4,20 @@ export default class Bike{
   constructor(map,bike,index){
     this.bike = bike;
 
-    
     this.icon = {
       //url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-transport-travel/116392-magic-marker-icon-transport-travel-transportation-bicycle.png', // url
-      url : 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png',
+      url : 'https://www.kaffeewiki.de/images/4/4f/Gray_dot.png',
       scaledSize: new google.maps.Size(10, 10), // scaled size
     };
-    if(bike.state == 1){
-      this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
-      var d = new Date();
-      if(bike.lasttime != null){
-        var n = d.getTime();
-        var diff = (n - bike.lasttime)/(1000*60);
-        console.log(diff);
-        if(diff >= 30) {
-          this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+
+
+    if(bike.id == "0000000000000390" || bike.id == "0000000000000393" || bike.id == "0000000000000394" || bike.id == "0000000000000397"){
+        this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png';
+      if(bike.state == 1){
+        this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
+        if(bike.lasttime != null){
+          if(bike.diff >= 30)this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
+
         }
       }
     }
@@ -28,17 +27,10 @@ export default class Bike{
       map: map.googleMap,
       position: {lat: parseFloat(bike.location.latitude), lng: parseFloat(bike.location.longitude)},
       icon: this.icon,
-      zoom: 20,
       customInfo: this.index
-
     });
     this.attachSecretMessage = this.attachSecretMessage.bind(this);
-    if(bike.state == 0){
-      //this.marker.setAnimation(google.maps.Animation.BOUNCE);
-      //setTimeout("this.marker.setAnimation(google.maps.Animation.BOUNCE)" , 10000);
-      //setTimeout("this.marker.setAnimation(4)" , 10000);
-      
-    }
+
   }
 
   attachSecretMessage() {
