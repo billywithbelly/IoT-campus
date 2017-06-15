@@ -4,6 +4,7 @@ export default class Bike{
   constructor(map,bike,index){
     this.bike = bike;
 
+    
     this.icon = {
       //url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-transport-travel/116392-magic-marker-icon-transport-travel-transportation-bicycle.png', // url
       url : 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png',
@@ -20,13 +21,22 @@ export default class Bike{
       }
     }
 
+
     this.marker = new google.maps.Marker({
       map: map.googleMap,
       position: {lat: parseFloat(bike.location.latitude), lng: parseFloat(bike.location.longitude)},
       icon: this.icon,
+      zoom: 20,
       customInfo: this.index
+
     });
     this.attachSecretMessage = this.attachSecretMessage.bind(this);
+    if(bike.state == 0){
+      this.marker.setAnimation(google.maps.Animation.BOUNCE);
+      //setTimeout("this.marker.setAnimation(google.maps.Animation.BOUNCE)" , 10000);
+      //setTimeout("this.marker.setAnimation(4)" , 10000);
+      
+    }
   }
 
   attachSecretMessage() {

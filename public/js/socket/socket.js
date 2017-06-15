@@ -10,9 +10,11 @@ export default class Socket{
 			var bikes = response.result;
 
 			for(var i=0;i<bikes.length;i++){
+
 				var d = new Date();
 				bikes[i].time = new Date(new Date(bikes[i].time) - (d.getTimezoneOffset() * 60000));
 				bikes[i].lasttime = new Date(new Date(bikes[i].lasttime));
+
 			};
 
 			this.map.setBikes(bikes);
