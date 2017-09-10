@@ -38,7 +38,7 @@ export default class ContactUs extends Component {
             </div>
           </div>
           <div className="row" style={rowStyle}>
-            <a onClick={this.sendContact} className="waves-effect waves-light btn"><i className="material-icons left">cloud</i>Send</a>
+            <a onClick={this.sendContact} className="waves-effect waves-light btn"><i className="material-icons left">cloud</i>傳送</a>
           </div>
         </span>;
         render(
@@ -63,12 +63,12 @@ export default class ContactUs extends Component {
 	<div id="contactUs" className="modal yellow lighten-2">
 		<div className="modal-content">
 			<div className="modal-header">
-			  <h4>Contact Us</h4>
+			  <h4>"聯絡我們"</h4>
 			</div>
 			<span id="contactHole"></span>
 		</div>
 			<div className="modal-footer yellow darken-2">
-			<a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+			<a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">關閉</a>
 		</div>
 	</div>
     );

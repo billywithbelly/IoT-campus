@@ -133,7 +133,7 @@ export default class UI extends Component {
 			overflow:'auto'
 		};
 
-		return (
+		return null;/*(
 			<div>
 				<div id="buts" className="fixed-action-btn click-to-toggle" style={menuStyle}>
 					<a className="btn-floating btn-large waves-effect waves-light red">
@@ -154,6 +154,6 @@ export default class UI extends Component {
 				</footer>
 				<span id="AccountModalHole"></span>
 			</div>
-		);
+		);*/
 	}
 }

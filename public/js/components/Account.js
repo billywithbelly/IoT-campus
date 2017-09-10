@@ -22,28 +22,28 @@ export default class Account extends React.Component {
       	<div id="login" className="modal">
 		  <div className="modal-content">
 		    <div className="modal-header">
-		      <h4>Login</h4>
+		      <h4>登入</h4>
 		    </div>
 		    <div className="row">
 		      <div className="input-field col s12">
 		        <input id="accountInput" type="text" className="validate" />
-		        <label htmlFor="Account">Account</label>
+		        <label htmlFor="Account">帳號</label>
 		      </div>
 		    </div>
 		    <div className="row">
 		      <div className="input-field col s12">
 		        <input id="passwordInput" type="password" className="validate" />
-		        <label htmlFor="password">Password</label>
+		        <label htmlFor="password">密碼</label>
 		      </div>
 		    </div>
 		    <div className="row">
 		      <div className="input-field col s12">
-		        <a className="waves-effect waves-light btn red" onClick={this.loginButHendler}>Login</a>
+		        <a className="waves-effect waves-light btn red" onClick={this.loginButHendler}>登入</a>
 		      </div>
 		    </div>
 		  </div>
 		  <div className="modal-footer">
-		    <a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		    <a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">關閉</a>
 		  </div>
 		</div>
     );

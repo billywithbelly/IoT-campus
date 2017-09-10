@@ -14,16 +14,20 @@ export default class Socket{
 				bikes[i].time = new Date(new Date(bikes[i].time) - (d.getTimezoneOffset() * 60000));
 				//if(bikes[i].id == "0000000000000393")console.log(bikes[i]);
 
-        if(bikes[i].lasttime == new Date(0).getTime())bikes[i].lasttime = "No data";
+        if(bikes[i].lasttime == new Date(0).getTime())bikes[i].lasttime = "無資料";
 				else bikes[i].lasttime = new Date(bikes[i].lasttime);
 
         var n = d.getTime();
-        var diff =  (n - bikes[i].lasttime)/(1000*60);
+
+        // temporary change this to string
+        var diff =  "無資料";//(n - bikes[i].lasttime)/(1000*60);
 				bikes[i].diff = diff;
 			};
 			console.log(bikes);
 			this.map.setBikes(bikes);
 		});
-
+		//var diff = "無資料";
+		//console.log(bikes);
+		//	this.map.setBikes(bikes);
 	}
 }

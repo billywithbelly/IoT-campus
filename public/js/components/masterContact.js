@@ -16,10 +16,10 @@ var MySelect = React.createClass({
     return (
       <select value={this.state.value} onChange={this.handleChange}>
         <option value="0" disabled>Choose Type</option>
-		<option value="1">Education</option>
-		<option value="2">Dome</option>
-		<option value="3">Food</option>
-		<option value="4">Play</option>
+		<option value="1">教育</option>
+		<option value="2">宿舍</option>
+		<option value="3">食物</option>
+		<option value="4">娛樂</option>
       </select>
     );
   }

@@ -23,11 +23,16 @@ class SocketIO
 							for(var i=0;i<data.length;i++){
 								var obj = new Object;
 								obj.id = data[i]._id;
-								obj.state = data[i].data.charAt(9)%2;
+								var status = data[i].data.charAt(9)%2;
+								if (status == 1) 
+									obj.state = "車位已滿";
+								else 
+									obj.state = "尚有空位";
 								obj.battery = data[i].data.charAt(8)%2;
+
 								obj.location = data[i].location;
-								//obj.kid = null;
 								obj.time = data[i].time;
+/*
 								if(data[i].lasttime != null && data[i].lasttime > 100){
 									obj.lasttime =  data[i].lasttime;
 								}else {
@@ -40,6 +45,18 @@ class SocketIO
 								}
 								if(obj.lasttime != null && obj.lasttime > 100)that.mongoDataBase.updateBike(obj.id,obj.lasttime,function(err,data) {
 								});
+*/								
+								
+								if(bool == true){
+									obj.lasttime = ourbikes[i].lasttime;
+									if(obj.state != ourbikes[i].state){
+										var d = new Date();
+										obj.lasttime =  d.getTime();
+										//that.mongoDataBase.updateBike(obj.id,obj.lasttime,function(err,data) {
+										//});
+									}
+								}else obj.lasttime =  new Date(0).getTime();
+								
 								ourbikes[i] = obj;
 							};
 							socket.emit('bikes',func.result(ourbikes,1));
