@@ -24,6 +24,7 @@ class SocketIO
 								var obj = new Object;
 								obj.id = data[i]._id;
 								var status = data[i].data.charAt(9)%2;
+								obj.status = status;
 								if (status == 1) 
 									obj.state = "車位已滿";
 								else 
@@ -32,31 +33,14 @@ class SocketIO
 
 								obj.location = data[i].location;
 								obj.time = data[i].time;
-/*
-								if(data[i].lasttime != null && data[i].lasttime > 100){
-									obj.lasttime =  data[i].lasttime;
-								}else {
-									if(bool == true)obj.lasttime =  ourbikes[i].lasttime;
-									else obj.lasttime =  new Date(0).getTime();
-								}
-								if(bool == true && obj.state != ourbikes[i].state){
+		
+								if(data[i].lasttime >= 2){
+									obj.lasttime = data[i].lasttime;
+								
+								}else  {
 									var d = new Date();
 									obj.lasttime =  d.getTime();
 								}
-								if(obj.lasttime != null && obj.lasttime > 100)that.mongoDataBase.updateBike(obj.id,obj.lasttime,function(err,data) {
-								});
-*/								
-								
-								if(bool == true){
-									obj.lasttime = ourbikes[i].lasttime;
-									if(obj.state != ourbikes[i].state){
-										var d = new Date();
-										obj.lasttime =  d.getTime();
-										//that.mongoDataBase.updateBike(obj.id,obj.lasttime,function(err,data) {
-										//});
-									}
-								}else obj.lasttime =  new Date(0).getTime();
-								
 								ourbikes[i] = obj;
 							};
 							socket.emit('bikes',func.result(ourbikes,1));

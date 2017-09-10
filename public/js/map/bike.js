@@ -9,8 +9,8 @@ export default class Bike{
       url : 'https://www.kaffeewiki.de/images/4/4f/Gray_dot.png',
       scaledSize: new google.maps.Size(10, 10), // scaled size
     };
-
-         
+       //ok 38f, 397, de, ac要加經緯
+       //fucked 390, 9b 
     if(bike.id == "0000000000000390" || bike.id == "0000000000000393" || bike.id == "0000000000000394" || bike.id == "0000000000000397" ||
         bike.id == "000000000D01009B" || bike.id == "000000000D0100DE" || bike.id == "000000000D010041" || bike.id == "000000000D0100D6" 
           || bike.id == "000000000D0100AC" || bike.id == "000000000000038F" || bike.id == "000000000D0100A1"){

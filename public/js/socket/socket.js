@@ -14,8 +14,10 @@ export default class Socket{
 				bikes[i].time = new Date(new Date(bikes[i].time) - (d.getTimezoneOffset() * 60000));
 				//if(bikes[i].id == "0000000000000393")console.log(bikes[i]);
 
-        if(bikes[i].lasttime == new Date(0).getTime())bikes[i].lasttime = "無資料";
-				else bikes[i].lasttime = new Date(bikes[i].lasttime);
+	
+		bikes[i].lasttime = new Date(bikes[i].lasttime);
+			
+				
 
         var n = d.getTime();
 
