@@ -1,0 +1,285 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DE",
+				"decryptor"
+			],
+			[
+				"decryp",
+				"decryptor"
+			],
+			[
+				"as",
+				"AESGCM"
+			],
+			[
+				"set",
+				"setAnimation"
+			],
+			[
+				"google",
+				"googleMap"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/johncena/Desktop/IoT-campus/class/bike/bike.js",
+		"/Users/johncena/Desktop/IoT-campus/public/js/map/bike.js",
+		"/Users/johncena/Desktop/IoT-campus/index.js",
+		"/Users/johncena/Desktop/IoT-campus/class/socket.js",
+		"/Users/johncena/Desktop/IoT-campus/class/mongoDataBase.js",
+		"/Users/johncena/Desktop/IoT-campus/class/view/ejs/bikeInfo.ejs",
+		"/Users/johncena/Desktop/IoT-campus/include/api/bike/bike.js",
+		"/Users/johncena/Desktop/IoT-campus/node_modules/coa/lib/cmd.js",
+		"/Users/johncena/Desktop/AES/aes.py",
+		"/Users/johncena/Desktop/Gurux.DLMS.cpp/README.md",
+		"/Users/johncena/Desktop/IoT-campus/public/js/socket/socket.js",
+		"/Users/johncena/Desktop/main.py",
+		"/Users/johncena/Desktop/IoT-Campus/IoT-campus/public/js/map/map.js",
+		"/Users/johncena/Desktop/testHeroku/test.py",
+		"/Users/johncena/Desktop/testHeroku/main.py",
+		"/Users/johncena/Desktop/testHeroku/requirements.txt",
+		"/Users/johncena/Desktop/IoT-Campus/IoT-campus/index.js",
+		"/Users/johncena/Desktop/python-getting-started/README.md",
+		"/Users/johncena/Desktop/python-getting-started/requirements.txt",
+		"/Users/johncena/Desktop/IoT-Campus/IoT-campus/app.json",
+		"/Users/johncena/Desktop/IoT-Campus/IoT-campus/public/js/react/index_bundle.js",
+		"/Users/johncena/Desktop/IoT-Campus/IoT-campus/public/js/socket/socket.js",
+		"/Users/johncena/Downloads/HW3_framework/HW3_framework/CG_HW3/CG_HW3/main.cpp",
+		"/Users/johncena/Downloads/HW3_framework/HW3_framework/CG_HW3/CG_HW3/sample.vert",
+		"/Users/johncena/Downloads/137testcase.cs",
+		"/Users/johncena/Downloads/Contribution-of-Undergraduate-Research.jpg",
+		"/Users/johncena/Downloads/hw2/reference_hw2/hw2.l",
+		"/Users/johncena/Downloads/hw2/reference_hw2/tesetcase1/testcase1_err.cs",
+		"/Users/johncena/Downloads/hw2/reference_hw2/tesetcase1/testcase1.cs",
+		"/Users/johncena/Downloads/makeRGBCylinder.m",
+		"/Users/johncena/Desktop/heroku/rubike/public/js/socket/socket.js",
+		"/Users/johncena/Desktop/heroku/rubike/public/js/react/index.js",
+		"/Users/johncena/Desktop/heroku/rubike/public/js/map/bike.js",
+		"/Users/johncena/Desktop/heroku/rubike/index.js",
+		"/Users/johncena/Desktop/heroku/rubike/class/mongoDataBase.js",
+		"/Users/johncena/Desktop/heroku/rubike/class/ruruBikeAPI.js",
+		"/Users/johncena/Desktop/heroku/rubike/include/api/bike/bike.js",
+		"/Users/johncena/Desktop/github/RuRubike/index.js",
+		"/Users/johncena/Desktop/heroku/rubike/include/api/account/account.js",
+		"/Users/johncena/Desktop/heroku/rubike/class/login/login.js",
+		"/Users/johncena/Desktop/heroku/rubike/class/bike/bike.js",
+		"/Users/johncena/Downloads/main-2.cpp",
+		"/Users/johncena/Desktop/pls/RuRubike/public/js/map/map.js",
+		"/Users/johncena/Desktop/pls/RuRubike/public/js/map/direction.js",
+		"/Users/johncena/Desktop/pls/RuRubike/public/js/map/bike.js",
+		"/Users/johncena/Desktop/pls/RuRubike/class/socket/socket.js",
+		"/Users/johncena/Desktop/pls/RuRubike/class/database/mongoDataBase.js",
+		"/Users/johncena/Desktop/pls2/rubike/class/mongoDataBase.js",
+		"/Users/johncena/Desktop/pls2/rubike/class/login/login.js",
+		"/Users/johncena/Desktop/pls2/rubike/include/api/bike/bike.js",
+		"/Users/johncena/Desktop/pls2/rubike/include/api/account/account.js",
+		"/Users/johncena/Downloads/103062391/MatlabCode/hw1b.m",
+		"/Users/johncena/Downloads/main.cpp",
+		"/Users/johncena/Documents/MATLAB/my_filter.m",
+		"/Users/johncena/Downloads/HW2_Q1.m",
+		"/Users/johncena/Desktop/hw1_sample_revise_version4/test_sample_no_credit/README",
+		"/Users/johncena/Desktop/hw1_sample_revise_version4/test_sample_no_credit/test_answer_student/test0_1_error.out",
+		"/Users/johncena/Desktop/hw1_sample_revise_version4/test_sample_no_credit/test_answer_student/test0_1.out",
+		"/Users/johncena/Desktop/hw1_sample_revise_version4/test_sample_no_credit/test_answer_student/pragma_source_off_1.out",
+		"/Users/johncena/Desktop/hw/MatlabCode/hw3b.m",
+		"/Users/johncena/Downloads/103062110_hw4/hw4.c",
+		"/Users/johncena/Desktop/SchoolWork/OS/103062391_李立峯_hw3/5-39.c",
+		"/Users/johncena/Desktop/testing/index.rpt",
+		"/Users/johncena/Desktop/ArchiFinal/ArchiFinal/index.rpt"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"+ 8",
+			"+8",
+			"lasttime",
+			"State",
+			"enter/leave",
+			"state",
+			"getBikes",
+			"Parking",
+			"lasttime",
+			"last_time",
+			"getOneBike",
+			"Parking",
+			"Parking_lasttime",
+			"aad",
+			"bounce",
+			"close",
+			"closeout",
+			"close",
+			"this.icon",
+			"scaledSize",
+			"thawing",
+			"url",
+			"Url",
+			"URL",
+			"constant",
+			"'%'",
+			"'.'",
+			":",
+			"SHORT",
+			"SIGNED",
+			"declaration_list",
+			"declarator",
+			"argument_expression",
+			"|\n",
+			"mouseEye",
+			"117"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bike.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

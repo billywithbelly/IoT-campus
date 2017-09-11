@@ -12,11 +12,17 @@ export default class Bike{
        //ok 38f, 397, de, ac要加經緯
        //fucked 390, 9b 
     if(bike.id == "0000000000000390" || bike.id == "0000000000000393" || bike.id == "0000000000000394" || bike.id == "0000000000000397" ||
-        bike.id == "000000000D01009B" || bike.id == "000000000D0100DE" || bike.id == "000000000D010041" || bike.id == "000000000D0100D6" 
-          || bike.id == "000000000D0100AC" || bike.id == "000000000000038F" || bike.id == "000000000D0100A1"){
-        this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png';
-      if(bike.state == "車位已滿"){
-        this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
+        bike.id == "000000000D01009B" || bike.id == "000000000D0100DE" || bike.id == "000000000D010041" || bike.id == "000000000D0100D6" ||
+        bike.id == "000000000D0100AC" || bike.id == "000000000000038F" || bike.id == "000000000D0100A1" || bike.id == "0000000000000430" ||
+        bike.id == "0000000000000462"){
+
+        if(bike.id == "0000000000000430" || bike.id == "0000000000000462"){
+          this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-6/128/Circle-icon.png';
+        }else
+          this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-green-icon.png';
+      
+        if(bike.state == "車位已滿"){
+          this.icon.url = 'http://icons.iconarchive.com/icons/custom-icon-design/flatastic-10/256/Trafficlight-red-icon.png';
         //if(bike.lasttime != null){
           //if(bike.diff >= 30)this.icon.url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yellow_Light_Icon.svg/232px-Yellow_Light_Icon.svg.png';
 
